@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*============ yahoo_reset =============*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+a, a:focus, a:visited, a:active {
+	color: #fff;
+	text-decoration: none;
+}
+/*============ end_yahoo_reset ===============*/
+.cf:before, .cf:after {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+
+body {
+	color: #000;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 1;	
+	background-color: #FFF;
+}
+.wrapper {
+	padding-top: 51px;
+}
+header {
+	position: fixed;
+	z-index: 4000;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+header .top {
+	height: 51px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: box;	
+	background: #7fb102;
+}
+header .top-logo {
+	width: 150px;
+	height: 51px;	
+	overflow: hidden;
+}
+header .top-logo a {
+	display: inline-block;
+	width: 140px;
+	height: 35px;
+	margin: 8px 0 0 5px;
+	text-indent: -999px;
+	vertical-align: middle;
+	background: url(../img/logo.png) no-repeat left top;	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+header .top-menu {
+	margin-right: 8px;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	box-flex: 1;
+	text-align: right;
+}
+.top-menu .nav-icon-wrap {
+	display: inline-block;
+	width: 30px;
+	height: 44px;
+	padding-top: 6px;
+	margin-left: 5px;
+	text-align: center;
+	vertical-align: top;
+}
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 22px;
+	line-height: 17px;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.icon-channel_1 {
+	background-position: 0 -220px;
+}
+.icon-channel_2 {
+	background-position: -120px -220px;
+}
+.top-menu .icon-detail {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.nav-con {
+	overflow: scroll;
+	background-color: #111;
+}
+nav {
+	height: 38px;
+	width: 1100px;
+}
+nav a {
+	float: left;
+	padding: 0 12px;
+	font-size: 16px;
+	line-height: 38px;
+}
+.layer-moreNav {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 4000;
+	-webkit-box-shadow: 0 3px 3px #000;
+	-moz-box-shadow: 0 3px 3px #000;
+	box-shadow: 0 3px 3px #000;
+}
+.layer-moreNav ul {
+	background: rgba(0,0,0,0.8);
+}
+.layer-moreNav li {
+	width: 20%;
+	float: left;
+	height: 41px;
+	text-align: center;	
+}
+.layer-moreNav a {
+	yu-color: #d9d8d8;
+	color: #FFF;
+	font-size: 14px;
+	display: block;
+	height: 39px;
+	line-height: 39px;
+	vertical-align: middle;
+	border: 1px solid #252525;
+	border-top: 0;
+	border-left: none;	
+}
+.layer-moreNav li.selected a, .layer-moreNav a:hover {
+	background-color: #477900;
+}
+/*====== slider =========*/
+#slider {
+	width: 100%;
+	height: 192px;
+	margin-bottom: 20px;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.swipe-indicator {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+	text-align: center;
+}
+.swipe-indicator span {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background: rgba(0, 0, 0, .5);
+}
+.swipe-indicator span.curr {
+	background: #7db003;	
+}
+/*=========== end slider =============*/
+#content {
+	padding: 0 3px;
+}
+#content .mod-video {
+	margin-bottom: 20px;
+}
+#content .mod-video a {
+	display: block;	
+	color: #333;
+}
+#content .mod-video h2 {
+	height: 24px;
+	margin-bottom: 8px;
+	padding-left: 5px;
+	line-height: 1;
+	font-size: 20px;
+	font-weight: normal;	
+}
+.video-list {
+	margin-left: -5px;
+}
+.video-item {
+	float: left;
+	width: 33.333%;
+	padding-left: 8px;
+	margin-bottom: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.video-thumb {
+	background-color: #999;
+}
+.video-thumb img {
+	width: 100%;
+}
+.video-data {
+	height: 34px;
+	padding-top: 3px;
+	color: #2A2A2A;
+	font-family: 'hiragino sans gb', 'microsoft yahei', simsun;	
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+}
+.video-data a {
+	heigth: 34px;
+}
+
+
+footer {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	color: #999;
+	font-size: 10px;
+	line-height: 20px;
+	background-color: #2f2f2f;
+	border-top: 1px solid #454545;
+	clear: both;
+}
+
+
+/*================= 列表页 videoList.html =============================*/
+#videoList-title {
+	height: 30px;
+	margin-bottom: 10px;
+	color: #518900;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	background: #111;
+}
+a.loadMore-btn {
+	display: block;
+	height: 30px;
+	margin: 0px 2px 20px;
+	color: #666;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #CCC;
+}
+/*================= end 列表页 videoList.html =============================*/
+
+/*=========== 视频播放页 videoCourse.html ===============*/
+video {
+	width: 100%;
+}
+#videoCourse {
+	background-color: #111;
+}
+.recommend {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+.recommend-title {
+	height: 40px;
+	margin-bottom: 10px;	
+	color: #518900;
+	line-height: 42px;
+	font-size: 16px;	
+	border-bottom: 2px solid #518900;	
+}
+.recommend-item {
+	padding: 10px;
+	border-bottom: 1px solid #1b1b1b;
+}
+.recommend-hd {
+	margin-right: 10px;
+}
+.recommend-hd img {
+	width: 120px;
+	height: 67px;
+}
+.recommend-bd {
+	height: 67px;
+	overflow: hidden;
+}
+.recommend-name {
+	display: block;
+	max-height: 32px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	overflow: hidden;	
+}
+.recommend-author {
+	color: #999;	
+}
+/*=========== end 视频播放页 videoCourse.html ===============*/
+
+
+
+
+
+
+
+
