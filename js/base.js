@@ -1,13 +1,17 @@
 // JavaScript Document
 $(function() {
 	//点击导航按钮显示layer-moreNav
-	$('#J_showMoreNav').click(function() {
-		$('#J_layerMoreNav').toggle();
+	$('#J_showMoreNav').toggle(function() {
+		$('.icon-channel_1, .icon-detail_1').addClass('selected');
+		$('#J_layerMoreNav').show();
+	}, function() {
+		$('#J_layerMoreNav').hide();
+		$('.icon-channel_1, .icon-detail_1').removeClass('selected');
 	});
 	
 	//swipe slider api
 	window.mySwipe = new Swipe(document.getElementById('slider'), {
-	  startSlide: 2,
+	  startSlide: 0,
 	  speed: 400,
 	  auto: 3000,
 	  continuous: true,
